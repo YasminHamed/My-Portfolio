@@ -56,7 +56,7 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
+section .title::before{ 
     content: "";
     position: absolute;
     bottom: 0px;
@@ -77,8 +77,8 @@ section .title::after{
     transform: translateX(-50%);
 }
 
-/* navbar styling */
-.navbar{
+/* navbar1 styling */
+.navbar1{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -86,32 +86,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
-.navbar.sticky{
+.navbar1.sticky{
     padding: 15px 0;
     background: crimson;
 }
-.navbar .max-width{
+.navbar1 .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbar1 .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar1 .logo a span{
     color: crimson;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar1.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+.navbar1 .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar1 .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -119,10 +119,10 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar1 .menu li a:hover{
     color: crimson;
 }
-.navbar.sticky .menu li a:hover{
+.navbar1.sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -363,82 +363,19 @@ section .title::after{
     background: crimson;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 100%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 100%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 100%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 100%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
-}
-
-/* teams section styling */
-.teams .title::after{
-    content: "who with me";
-}
-.teams .carousel .card{
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover{
-    background: crimson;
-}
-.teams .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover .box{
-    transform: scale(1.05);
-}
-.teams .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.teams .carousel .card img{
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid crimson;
-    transition: all 0.3s ease;
-}
-.teams .carousel .card:hover img{
-    border-color: #fff;
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
+    width: 100%;
 }
 
 /* contact section styling */
@@ -564,6 +501,10 @@ footer span a:hover{
     text-decoration: underline;
 }
 /* project */
+.sec1{
+    margin-bottom: 20px;
+    width: 99vw;
+}
 .hover-items:hover {
     background-color: rgba(17, 17, 17, 0.779) !important;
 }
@@ -582,18 +523,18 @@ footer span a:hover{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2rem;
     margin-top: 3rem;
-  }
-  .portfolios .portfolio-item {
+}
+.portfolios .portfolio-item {
     position: relative;
     border-radius: 15px;
-  }
-  .portfolios .portfolio-item img {
+}
+.portfolios .portfolio-item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
-  }
-  .portfolios .portfolio-item .hover-items {
+}
+.portfolios .portfolio-item .hover-items {
     width: 100%;
     height: 100%;
     background-color: var(--color-secondary);
@@ -608,21 +549,21 @@ footer span a:hover{
     opacity: 0;
     transform: scale(0);
     transition: all 0.4s ease-in-out;
-  }
-  .abouttt{
+}
+.abouttt{
       color: rgb(0, 4, 255) !important;
-  }
-  .portfolios .portfolio-item .hover-items h3 {
+}
+.portfolios .portfolio-item .hover-items h3 {
     font-size: 1.5rem;
     color: var(--color-white);
     margin-bottom: 1.5rem;
-  }
-  .portfolios .portfolio-item .hover-items .icons {
+}
+.portfolios .portfolio-item .hover-items .icons {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .portfolios .portfolio-item .hover-items .icons .icon {
+}
+.portfolios .portfolio-item .hover-items .icons .icon {
     background-color: var(--color-primary);
     border-radius: 50%;
     width: 50px;
@@ -633,25 +574,23 @@ footer span a:hover{
     margin: 0 1rem;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
-  }
-  .portfolios .portfolio-item .hover-items .icons .icon i {
+}
+.portfolios .portfolio-item .hover-items .icons .icon i {
     font-size: 1.5rem;
     color: var(--color-white);
     margin: 0 1rem;
-  }
-  .portfolios .portfolio-item .hover-items .icons .icon:hover {
+}
+.portfolios .portfolio-item .hover-items .icons .icon:hover {
     background-color: var(--color-white);
-  }
-  .portfolios .portfolio-item .hover-items .icons .icon:hover i {
+}
+.portfolios .portfolio-item .hover-items .icons .icon:hover i {
     color: var(--color-primary);
-  }
-  
-  .portfolio-item:hover .hover-items {
+}
+
+.portfolio-item:hover .hover-items {
     opacity: 1;
     transform: scale(1);
-  }
-  
-  
+} 
 
 /* responsive media query start */
 @media (max-width: 1104px) {
@@ -674,7 +613,7 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-    .navbar .menu{
+    .navbar1 .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -685,13 +624,13 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbar1 .menu.active{
         left: 0;
     }
-    .navbar .menu li{
+    .navbar1 .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbar1 .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
