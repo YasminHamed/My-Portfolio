@@ -501,6 +501,37 @@ footer span a:hover{
     text-decoration: underline;
 }
 /* project */
+* {box-sizing: border-box;}
+
+.alllllllll {
+  position: relative;
+  width: 100%;
+  transition: 1s cubic-bezier(0.6, 0.03, 0.28, 0.98);  
+  transform: scale(0.9);
+}
+
+
+.overllay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.842); /* Black see-through */
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.alllllllll:hover .overllay {
+  opacity: 1;
+}
+.alllllllll:hover{
+    transform: scale(1.1);
+    transition: 1s cubic-bezier(0.6, 0.03, 0.28, 0.98);
+}
 .sec1{
     margin-bottom: 20px;
     width: 99vw;
@@ -509,7 +540,7 @@ footer span a:hover{
     background-color: rgba(17, 17, 17, 0.779) !important;
 }
 .seee{
-    color: blue;
+    color: rgb(191, 191, 191);
     margin: 20px;
     font-weight: bold;
 }
